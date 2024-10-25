@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${SPRING_DATA_MONGODB_PASSWORD}@${MONGO_HOST}:27017/reactive_database?authSource=admin
+server:
+  port: 8050

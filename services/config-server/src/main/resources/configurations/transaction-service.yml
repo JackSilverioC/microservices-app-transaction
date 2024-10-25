@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${SPRING_DATA_MONGODB_PASSWORD}@${MONGO_HOST}:27017/reactive_database?authSource=admin
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping: transferenceConfirmation:com.dev.ms_transaction.kafka.TransferenceConfirmation
+
+server:
+  port: 8070
+
+debitcard:
+  service:
+    uri: ${WEBCLIENT_BASE_URL}

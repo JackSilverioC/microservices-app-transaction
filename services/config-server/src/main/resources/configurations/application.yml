@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      override-system-properties: false
+eureka:
+  instance:
+    hostname: discovery-server
+  client:
+    service-url:
+      defaultZone: http://discovery-server:8761/eureka/
