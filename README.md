@@ -15,7 +15,7 @@ Este proyecto implementa una arquitectura de microservicios utilizando **Spring 
 
 - **Java** (JDK 17)
 - **Spring Boot**
-- **Spring Cloud (Eureka, Config Server, Gateway)**
+- **Spring Cloud (Eureka, Config Server)**
 - **Spring WebFlux**
 - **Kafka**
 - **MongoDB**
